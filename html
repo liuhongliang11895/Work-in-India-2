@@ -5,7 +5,7 @@
   <title>Loading...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
-    async function redirect() {
+    async function redirect() {html
       try {
         const res = await fetch("mapping.json?ts=" + Date.now()); // 加随机参数避免缓存
         const data = await res.json();
@@ -37,3 +37,4 @@
 <body>
 </body>
 </html>
+
